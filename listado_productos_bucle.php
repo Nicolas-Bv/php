@@ -50,7 +50,7 @@ $aProductos[]= array("Nombre" => "Aire Acondicionado Aire Split Inverter Frío/C
             <h1>Lista de Productos</h1>
         </div>
   </div>
-</div>
+
 
   <div class="row">
     <div class="col-12">
