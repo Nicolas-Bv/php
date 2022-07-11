@@ -66,37 +66,29 @@ $aProductos[]= array("Nombre" => "Aire Acondicionado Aire Split Inverter Frío/C
             <th>Acción</th>
          </tr>
        </thead>
-         
-       <tbody>
+        <tbody>
+       <?php
+
+       $contador=0;
+
+       while($contador<3){ ?>
+
          <tr>
-            <td><?php echo $aProductos[0]["Nombre"]; ?></td>
-            <td><?php echo $aProductos[0]["Marca"]; ?></td>
-            <td><?php echo $aProductos[0]["Modelo"]; ?></td>
-            <td><?php echo $aProductos[0]["Stock"] >10 ? "Hay Stock" : ($aProductos[0]["Stock"] >0 && $aProductos[0]["Stock"] <= 10? "Hay poco Stock": "No hay Stock"); ?></td>
-            <td><?php echo $aProductos[0]["Precio"]; ?></td>            
+            <td><?php echo $aProductos[$contador]["Nombre"]; ?></td>
+            <td><?php echo $aProductos[$contador]["Marca"]; ?></td>
+            <td><?php echo $aProductos[$contador]["Modelo"]; ?></td>
+            <td><?php echo $aProductos[$contador]["Stock"] >10 ? "Hay Stock" : ($aProductos[$contador]["Stock"] >0 && $aProductos[$contador]["Stock"] <= 10? "Hay poco Stock": "No hay Stock"); ?></td>
+            <td><?php echo $aProductos[$contador]["Precio"]; ?></td>            
             <td><button class="btn btn-primary">Comprar</button></td>
          </tr>
 
-         <tr>
-            <td><?php echo $aProductos[1]["Nombre"]; ?></td>
-            <td><?php echo $aProductos[1]["Marca"]; ?></td>
-            <td><?php echo $aProductos[1]["Modelo"]; ?></td>
-            <td><?php echo $aProductos[1]["Stock"] >10 ? "Hay Stock" : ($aProductos[1]["Stock"] >0 && $aProductos[1]["Stock"] <= 10? "Hay poco Stock": "No hay Stock"); ?></td>
-            <td><?php echo $aProductos[1]["Precio"]; ?></td>
-            <td><button class="btn btn-primary">Comprar</button></td>
-         </tr>
+         <?php
 
-         <tr>
-            <td><?php echo $aProductos[2]["Nombre"]; ?></td>
-            <td><?php echo $aProductos[2]["Marca"]; ?></td>
-            <td><?php echo $aProductos[2]["Modelo"]; ?></td>
-            <td><?php echo $aProductos[2]["Stock"] >10 ? "Hay Stock" : ($aProductos[2]["Stock"] >0 && $aProductos[2]["Stock"] <= 10? "Hay poco Stock": "No hay Stock"); ?></td>
-            <td><?php echo $aProductos[2]["Precio"]; ?></td>
-            <td><button class="btn btn-primary">Comprar</button></td>
-         </tr>
+         $contador++;}
 
-       </tbody>  
-     </table>
+         ?>
+        </tbody>
+       </table>
     </div>
   </div>
 </main>
