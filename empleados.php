@@ -52,7 +52,7 @@ foreach($aArray as $item){
 
 <body>
 
-    <div class="container">
+    <main class="container">
         <div class="row">
             <div class="col-12 py-3 text-center">
                 <h1>Listado de empleados</h1>
@@ -61,14 +61,14 @@ foreach($aArray as $item){
         <div class="row">
             <div class="col-12">
                 <table class="table table-hover border">
-                 
+                    <thead>
                         <tr>
                             <th>DNI</th>
                             <th>Nombre y apellido</th>
                             <th>Sueldo</th>
                         </tr>
-                  
-                  
+                   </thead>
+                   <tbody>
                         <?php
                         foreach ($aEmpleados as $empleado) {
                             $contador=0;
@@ -77,25 +77,20 @@ foreach($aArray as $item){
                          
                             <tr>
                                 <td><?php echo $empleado["DNI"];  ?></td>
-                                <td><?php echo strtoupper($empleado["Nombre"]);  ?></td>
+                                <td><?php echo mb_strtoupper($empleado["Nombre"]);  ?></td>
                                 <td><?php echo "$ " . number_format(calcularNeto($empleado["Bruto"]), "2", ",", ".");  ?></td>
                             </tr>
                              <?php }; ?>
-  
+                   </tbody>
                 </table>
-                     
+            <div class="row">
+                <div class="col-12">
                 <?php echo "Cantidad de empleados activos: " . contar($aEmpleados); ?>
-
+                </div>
             </div>
         </div>
-
-
-
-
-
-
-
     </div>
+ </main>
 
 </body>
 
