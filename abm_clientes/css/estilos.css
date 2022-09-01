@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{
+    font-family:  'Montserrat', sans-serif;
+}
+
+#contacto{
+    background-image: url(../images/Imagenes/fondo-contacto.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#proyecto{
+    background-image: url(../images/Imagenes/fondo-proyectos.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#inicio{
+    background-image: url(../images/Imagenes/fondo-contacto.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#confirmacion{
+    background-image: url(../images/Imagenes/fondo-contacto.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1{
+    color: #E20000;
+}
+
+.btn:hover{
+    color: white;
+    background-color: #370a6d;
+}
+.btn{
+    color: #370a6d;
+    background-color: white;
+    border: 0px;
+    margin-left: 20px;
+}
+
+footer .fa-github{
+    font-size: 30px;
+    color: white;
+}
+footer .fa-linkedin-in{
+    color: #ff4a49;
+    background-color: white;
+    font-size: 20px;
+    border: 0px;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    padding: 8px 0 0 0;
+    border-radius: 80px;
+    margin: 0 8px;}
+
+#proyecto footer .fa-github, #sobre-mi footer .fa-github{
+    color: #ff4a49; 
+}
+
+#proyecto footer .fa-linkedin-in, #sobre-mi footer .fa-linkedin-in{
+    color: white;
+    background-color: #ff4a49;
+}
+
+p{
+    color: #6A6A6A;
+}
+
+footer{
+    color:white;
+}
+
+#proyecto footer, #sobre-mi footer, #proyecto footer a, #sobre-mi footer a{
+color: #ff4a49;
+}
+
+
+
+
+footer a{
+    color: white;
+}
+
+.whatsapp{
+    background-color: #370a6d;
+    color: white;
+    width: 60px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 30px;
+    text-align: center;
+    padding: 8px 0 15px 0;
+    right: 80px;
+    position: fixed;
+    bottom: 0px;
+}
+
+nav .active{
+    border: 1px solid #E20000;
+    border-radius: 20px;
+}
+
+nav .nav-link{
+  color:  #282828;
+}
+
+input, button, textarea{
+    border-radius: 15px !important;
+}
+
+.shadow{
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+a.btn.btn-rojo{
+    background-color: #E20000 !important;
+    color: white !important;
+    font-weight: 100;
+    border-radius: 15px;
+    padding: 6px 12px;
+}
+
+a.btn.btn-rojo:hover{
+    color: white;
+    background-color: #370a6d;
+}
+
+.link-cod a{
+    color: #E20000;
+    text-decoration: none;
+}
+
+.img-fluid{
+    width: 100%;
+}
+
+#proyecto img{
+    height: 210px;
+}
+
+.color-degrade{
+    background: linear-gradient(to right,
+    rgba(184,37,20,1) 0%,
+     rgba(214,52,30,1) 47%,
+      rgba(240,47,23,1) 70%,
+       rgba(240,47,23,1) 100%
+    )
+
+}
+
+#proyecto h5{
+    color: white;
+    font-size: 16px;
+    margin-inline-start: 0.80rem;
+}
+
+
+#proyecto main{
+    display: block;
+}
+
+.row p {
+    font-size: 14px;
+}
+
+.card-group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.card-group p{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.y-5{
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+}
+
+.py-3 p{
+    height: 90px;
+}
+
+#inicio .cohete{
+    height: 400px;
+}
+
+#inicio .btn {
+    color: #370a6d;
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+}
+
+.btn:hover{
+    color: white !important; 
+    background-color: #370a6d !important;
+}
+
+.bienvenidx p{
+ font-size: 17px !important;
+ color: white;
+ border: 1px solid white;
+ border-radius: 50px;
+ font-weight: 600 !important;
+ padding: 5px 25px;
+
+}
+
+#inicio .cohete:hover{
+    height: 410px;
+}
+
+.img-co{
+    max-height: 430px;
+}
+
+.img-circle{
+    margin: 1em auto;
+    background-color: #fff;
+    border-radius: 50% !important;
+    height: 250px !important;
+    width: 250px !important;
+    max-width: 250px;
+    max-height: 250px;
+
+}
+
+#tecnologias h2{
+    color: white;
+    font-size: 24px;
+}
+
+
+#sobre-mi .card {
+    height: 180px;
+    display: flex;
+}
+
+#sobre-mi h3{
+    font-size: 16px !important;
+    color: #6A6A6A;
+}
+
+#sobre-mi .img-fluid{
+    width: 50%;
+}
+
+#sobre-mi h2{
+    font-size: 24px;
+    color: #370a6d;
+}
+
+.img-exp{
+    max-width: 200px;
+    max-height: 200px;
+}
+
+#sobre-mi h5{
+    font-size: 14px;
+    color: #6A6A6A;
+}
+
+#sobre-mi p{
+    font-size: 16px;
+    color: #6A6A6A;
+}
+
+#sobre-mi h4{
+    font-size: 17px;
+    color: #370a6d;
+}
+
+#sobre-mi h3{
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    color: #6A6A6A;
+}
+
+#formacion h4{
+    color: #E20000;
+}
+
+#sobre-mi .img-acad{
+    width: 100% !important;
+}
+
+#sobre-mi .img-cursos{
+    width: 100% !important;
+}
+
+#cursos h4{
+color: #E20000;
+}
+
+.img-fluid{
+    vertical-align: middle;
+}
+
+#cursos h5{
+    font-size: 12px;
+}
+
+#hobbies {
+    display: block;
+}
+
+#hobbies ul{
+    list-style-type: none;
+    padding: 0%;
+    font-size: 14px;
+    color: #282828;
+}
+
+#hobbies h2{
+   font-size: 16px;
+}
+
+.card-hobbie{
+    font-size: 100px;
+    color: white;
+}
+
+#hobbies .card{
+    background-color: #370a6d !important;
+}
+
+
+ 
+
+
+
+
+
+@media(max-width: 750px){
+    #contacto {
+        background-image: url("../images/Imagenes/fondo-proyectos.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    #inicio footer, #contacto footer, #inicio footer a, #contacto footer a{
+        color: #ff4a49;
+        }
+
+    #inicio footer .fa-github, #contacto footer .fa-github{
+            color: #ff4a49; 
+        }
+        
+    #inicio footer .fa-linkedin-in, #contacto footer .fa-linkedin-in{
+            color: white;
+            background-color: #ff4a49;
+        }
+
+    #proyectos {
+        background-image: url(../images/Imagenes/fondo-proyectos.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    #inicio p {
+        color: #E20000;
+        font-size: 16px;
+        border: 1px #E20000 solid;
+    }
+    
+    #inicio{
+        background-image: url(../images/Imagenes/fondo-proyectos.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    #sobre-mi .img-circle{
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+    border-radius: 50% !important;
+    }
+
+    i.fa-comments {
+        font-size: 70px;
+        padding-top: 50px !important;
+    }
+
+    i.fa-fire-flame-curved{
+        font-size: 70px;
+        padding-top: 30px !important;
+    }
+    
+
+
+}
