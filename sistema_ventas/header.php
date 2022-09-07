@@ -27,7 +27,7 @@ if($_POST){
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title><?php echo $pg; ?></title>
+  <title>Inicio</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
