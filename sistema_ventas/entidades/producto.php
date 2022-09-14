@@ -1,5 +1,6 @@
 <?php
 
+
 class Producto{
     private $nombre;
     private $cantidad;
@@ -8,10 +9,6 @@ class Producto{
     private $imagen;
     private $fk_idtipoproducto;
     private $idproducto;
-
-
-
-
 
 
 public function __construct()
@@ -42,17 +39,15 @@ public function insertar()
                 precio,
                 descripcion,
                 imagen,
-                fk_idtipoproducto,
-                idproducto
+                fk_idtipoproducto
                 
             ) VALUES (
                 '$this->nombre',
                 $this->cantidad,
                 $this->precio,
-                '$this->imagen,
+                '$this->imagen',
                 '$this->descripcion',
-                $this->fk_idtipoproducto,
-                $this->idproducto
+                $this->fk_idtipoproducto
             );";
     // print_r($sql);exit;
     //Ejecuta la query
@@ -64,6 +59,17 @@ public function insertar()
     //Cierra la conexión
     $mysqli->close();
 }
+
+public function cargarFormulario($request)
+    {
+        $this->idproducto = isset($request["id"]) ? $request["id"] : "";
+        $this->nombre = isset($request["txtNombre"]) ? $request["txtNombre"] : "";
+        $this->precio = isset($request["txtPrecio"]) ? $request["txtPrecio"] : 0;
+        $this->cantidad = isset($request["txtCantidad"]) ? $request["txtCantidad"] : 0;
+        $this->imagen = isset($request["imagen"]) ? $request["imagen"] : "";
+        $this->descripcion = isset($request["txtDescripcion"]) ? $request["txtDescripcion"] : "";
+        $this->fk_idtipoproducto = isset($request["lstTipoProducto"]) ? $request["lstTipoProducto"] : "";
+    }
 
 public function actualizar()
 {
@@ -107,7 +113,7 @@ public function obtenerPorId()
                     imagen,
                     fk_idtipoproducto
             FROM productos
-            WHERE idtipoproducto = $this->idtipoproducto";
+            WHERE idproducto = $this->idproducto";
     if (!$resultado = $mysqli->query($sql)) {
         printf("Error en query: %s\n", $mysqli->error . " " . $sql);
     }

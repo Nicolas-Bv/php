@@ -1,7 +1,8 @@
 <?php
 
+
 class TipoProducto{
-    private $idTipoProducto;
+    private $idtipoproducto;
     private $nombre;
    
 
@@ -21,12 +22,14 @@ public function __set($atributo, $valor)
     return $this;
 }
 
+
+
 public function insertar()
 {
     //Instancia la clase mysqli con el constructor parametrizado
     $mysqli = new mysqli(Config::BBDD_HOST, Config::BBDD_USUARIO, Config::BBDD_CLAVE, Config::BBDD_NOMBRE, Config::BBDD_PORT);
     //Arma la query
-    $sql = "INSERT INTO idtipoproducto (
+    $sql = "INSERT INTO tipo_productos (
                 nombre
                 
                 
@@ -59,6 +62,14 @@ public function actualizar()
     $mysqli->close();
 }
 
+
+    public function cargarFormulario($request)
+    {
+        $this->idtipoproducto = isset($request["id"]) ? $request["id"] : "";
+        $this->nombre = isset($request["txtNombre"]) ? $request["txtNombre"] : "";
+        
+    }
+
 public function eliminar()
 {
     $mysqli = new mysqli(Config::BBDD_HOST, Config::BBDD_USUARIO, Config::BBDD_CLAVE, Config::BBDD_NOMBRE, Config::BBDD_PORT);
@@ -87,11 +98,6 @@ public function obtenerPorId()
         $this->idtipoproducto = $fila["idtipoproducto"];
         $this->nombre = $fila["nombre"];
        
-        if(isset($fila["fecha_nac"])){
-            $this->fecha_nac = $fila["fecha_nac"];
-        } else {
-            $this->fecha_nac = "";
-        }
   
     }
     $mysqli->close();
@@ -114,7 +120,7 @@ public function obtenerPorId()
 
         while($fila = $resultado->fetch_assoc()){
             $entidadAux = new TipoProducto();
-            $entidadAux->idproducto = $fila["idtipoproducto"];
+            $entidadAux->idtipoproducto = $fila["idtipoproducto"];
             $entidadAux->nombre = $fila["nombre"];    
             $aResultado[] = $entidadAux;
         }

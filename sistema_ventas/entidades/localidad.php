@@ -1,5 +1,6 @@
 <?php
 
+
 class Localidad{
     private $idlocalidad;
     private $nombre;
