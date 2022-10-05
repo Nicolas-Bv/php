@@ -20,7 +20,7 @@ class Provincia
     {
         $mysqli = new mysqli(Config::BBDD_HOST, Config::BBDD_USUARIO, Config::BBDD_CLAVE, Config::BBDD_NOMBRE, Config::BBDD_PORT);
         $sql = "SELECT
-                    idprovincias,
+                    idprovincia,
                     nombre
                 FROM provincias
                 ORDER BY nombre ASC";
@@ -34,7 +34,7 @@ class Provincia
 
             while ($fila = $resultado->fetch_assoc()) {
                 $entidad = new Provincia();
-                $entidad->idprovincia = $fila["idprovincias"];
+                $entidad->idprovincia = $fila["idprovincia"];
                 $entidad->nombre = $fila["nombre"];
                 $aResultado[] = $entidad;
 
